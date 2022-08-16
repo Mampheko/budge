@@ -11,9 +11,9 @@ function App() {
 
   const addTransaction = ((amount, item , transactionType) => {
 
-    setTransaction((item) => [...item, {
+    setTransaction((items) => [...items, {
       amount:amount,
-      item:item,
+      items:item,
       transactionType: transactionType
     }])
 

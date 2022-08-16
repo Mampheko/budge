@@ -6,16 +6,16 @@ function DisplayTransaction (props) {
         <div>
             {props.list.map((item)=>(
                 <div>
-                     {item.transactionatype == "Expense" ? (
+                     {item.transactionType == "Expense" ? (
                       <div className="transaction-item"> 
                     <div> 
-                    <h4 style={{paddingLeft:"12px", paddingTop:"25px"}}>
-                        {item.amount}
+                    <h4 style={{paddingLeft:'12px', paddingTop:"25px"}}>
+                        {item.items}
                     </h4>
                     </div>
                     <div>
                     <h4 style={{paddingLeft:"290px", paddingTop:"25px"}}>
-                        {item.item}
+                        {item.amount}
                         </h4>
                     </div>
                     <div className="expense-line"></div>
@@ -24,12 +24,12 @@ function DisplayTransaction (props) {
                         <div className="transaction-item"> 
                         <div> 
                         <h4 style={{paddingLeft:"12px", paddingTop:"25px"}}>
-                            {item.amount}
+                            {item.items}
                         </h4>
                         </div> 
                         <div>
                         <h4 style={{paddingLeft:"290px", paddingTop:"25px"}}>
-                            {item.item}
+                            {item.amount}
                             </h4>
                         </div>
                         <div className="income-line"></div>
